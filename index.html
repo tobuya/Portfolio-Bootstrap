@@ -10,7 +10,7 @@
 </head>
 <body class="d-flex flex-column gap-5">
     <header class="container-fluid h-100 d-flex flex-column">
-        <nav class="row h-25 bg-primary justify-content-between pt-3 ps-3 align-middle">
+        <nav class="row h-25 justify-content-between pt-3 ps-3 align-middle">
             <p class="col-4">My Logo</p>
             <ul class="col-4 d-flex flex-row justify-content-around list-unstyled">
                 <li>Portfolio</li>
@@ -18,7 +18,7 @@
                 <li>Contact</li>
             </ul>
         </nav>
-        <section class="row container flex-grow-1 align-self-center d-flex flex-column justify-content-center bg-danger py-5">
+        <section class="row container flex-grow-1 align-self-center d-flex flex-column justify-content-center py-5">
             <h1>I’m Alexandra<br />
                 Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -42,10 +42,10 @@
             </ul>
         </section>
     </header>
-    <main class="container col border">
+    <main class="container col">
         <section class="row d-flex flex-row mt-5">
             <img src="asset/images/Snapshoot Portfolio.png" alt="" class="w-50">
-            <section class="d-flex flex-column bg-secondary w-50 gap-2">
+            <section class="d-flex flex-column w-50 gap-2">
                 <h2>TONIC</h2>
                 <ul class="d-flex flex-row justify-content-start gap-3 ps-0">
                     <p>CANOPY</p>
@@ -70,7 +70,7 @@
             </section>
         </section>
         <section class="row d-flex flex-row mt-5">
-            <section class="d-flex flex-column bg-secondary w-50 gap-2">
+            <section class="d-flex flex-column w-50 gap-2">
                 <h2>Multi-Post Stories</h2>
                 <ul class="d-flex flex-row justify-content-start gap-3 ps-0">
                     <p>FACEBOOK</p>
@@ -100,7 +100,7 @@
         </section>
         <section class="row d-flex flex-row mt-5">
             <img src="asset/images/tonic-desk.jpg" alt="" class="w-50">
-            <section class="d-flex flex-column bg-secondary w-50 gap-2">
+            <section class="d-flex flex-column w-50 gap-2">
                 <h2>Facebook 360</h2>
                 <ul class="d-flex flex-row justify-content-start gap-3 ps-0">
                     <p>FACEBOOK</p>
@@ -128,7 +128,7 @@
             </section>
         </section>
         <section class="row d-flex flex-row mt-5">
-            <section class="d-flex flex-column bg-secondary w-50 gap-2">
+            <section class="d-flex flex-column w-50 gap-2">
                 <h2>Uber Navigation</h2>
                 <ul class="d-flex flex-row justify-content-start gap-3 ps-0">
                     <p>Uber</p>
@@ -180,7 +180,7 @@
                     <img src="asset/images/median.svg" alt="median-icon">
                 </li>
             </ul>
-            <button class="w-50 text-primary border border-primary p-2">Get My Resume</button>
+            <button class="w-50 text-primary border border-primary p-1">Get My Resume</button>
         </section>
         <section class="col d-flex flex-column gap-4">
             <div class="d-flex flex-row justify-content-between">
@@ -189,13 +189,13 @@
             </div>
             <ul class="d-flex flex-row gap-3 list-unstyled">
                 <li>
-                    <img src="asset/images/JS1.png" alt="javascript-icon">
+                    <img src="asset/images/js.svg" alt="javascript-icon">
                 </li>
                 <li>
-                    <img src="asset/images/HTML1.png" alt="html-icon">
+                    <img src="asset/images/html.svg" alt="html-icon">
                 </li>
                 <li>
-                    <img src="asset/images/CSS1.png" alt="css-icon">
+                    <img src="asset/images/css.svg" alt="css-icon">
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-between border-bottom">
@@ -208,14 +208,20 @@
             </div>
         </section>
     </section>
-    <footer class="container-fluid">
-        <h2 class="">Contact me</h2>
-        <p class="">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-        <form action="">
-            <input type="text" id="name" name="name" placeholder="Type your name please">
-            <input type="email" id="email" name="name" placeholder="Type your email please">
-            <textarea rows="10" maxlength="500" required></textarea>
-            <input type="submit" value="submit">
+    <footer class="container-fluid d-flex flex-column justify-content-center align-content-center w-50">
+        <h2 class="text-center">Contact me</h2>
+        <p class="text-center">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <form action="#" method="Get">
+            <label for="name" class="mb-3 w-100">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name here" required>
+            </label>
+            <label for="email" class="mb-3 w-100">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email here" required>
+            </label>
+            <textarea class="form-control mb-3" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
+            <div class="text-center">
+                <button type="submit" class="btn text-primary border border-primary text-center mb-4">Get in touch</button>
+            </div>
         </form>
     </footer>
     
